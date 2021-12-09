@@ -1,0 +1,32 @@
+In this assignment, you are to write a program in C++ that will simulate a tic-tac-toe game and will 
+terminate in three cases:
+1. The user enters a negative number
+2. One of the players wins by having 3 consecutive squares, either horizontally, vertically or diagonally,
+chosen with their letter (X or O)
+3. All squares are selected and no player has 3 consecutive squares chosen with their letter.
+Your program should repeatedly prompt the user for a square number with the following alternating 
+prompts, starting with the first prompt and then using the second prompt, and then repeating the 
+process again with the first prompt and then the second prompt :
+Player X: which square number (1-9)?
+or 
+Player O: which square number (1-9)?
+The user should input a number between 1 and 9.  If the square is invalid, i.e., not an integer between 1 
+and 9 inclusive, then the program should output the following message on a separate line:
+Invalid square selected, please try again.
+If the square has already been selected in a previous input, then the program should output on a 
+separate line:
+Square already chosen, please try again.
+This process should continue until 
+(a) the board becomes full with no player satisfying the winning conditions, in which case the program 
+should output
+DRAW
+on a separate line
+(b) one player has selected 3 consecutive squares either vertically, horizontally or diagonally.  In this 
+case, the program should output
+PLAYER X WINS!
+or
+PLAYER Y WINS!
+depending on which of the two players had the three consecutively selected squares.
+(c) the player enters a negative number, in which case the program should output the message
+GAME ENDED BY USER!
+before the program exits
