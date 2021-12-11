@@ -1,0 +1,25 @@
+This assignment statement is taken directly from Problem 3.5 in the Exercise Book for the course (M. D. Adams, Exercises for Programming in C++ (Version 2021-04-01), University of Victoria, Victoria, BC, Canada, Apr. 2021, xxii + 136 pages. ISBN 978-0-9879197-5-5 (ebook).)
+
+Develop a class Rational that represents a rational number (i.e., a number of the form x/y where x and y
+are integers and y 6= 0). The class should satisfy the following requirements:
+
+i. A type member Integer should be provided that corresponds to the integer type used to represent the
+numerator and denominator of the rational number.
+
+ii. A constructor should be provided that takes two arguments corresponding to the numerator and de-
+nominator values of the rational number, respectively. The first argument should default to zero. The
+second argument should default to one.
+
+iii. The class should provide move and copy constructors, move and copy assignment operators, and a
+destructor.
+iv. The addition, subtraction, multiplication, and division operators should be provided.
+
+v. The +=, -=, *=, and /= operators should be provided.
+
+vi. A member function toDouble should be provided that returns the best approximation of the rational
+number as a double.
+
+vii. A stream inserter should be provided to write a rational number to an output stream (std::ostream)
+using a format like “-15/23”.
+
+viii. All data members should be private.
