@@ -1,0 +1,22 @@
+Suppose you want to represent an n-dimensional Vector in C++ and include some common vector
+operations as part of a Vector class (note the uppercase V instead of lowercase v).
+
+An N-dimensional Vector can be represented as a sequence of N different coordinates, which we
+assume to be of type float.
+
+So for example, a 2-dimensional vector can be represented as a sequence of 2 coordinates, e.g., the
+point with x-coordinate 3.4 and y-coordinate 2.7 would be (3.4f, 2.7f), while a 3-dimensional vector
+can be represented as a sequence of 3 coordinates, e.g., (-3.8f, 9.3f, -4.9f).
+
+We will assume that the N-dimensional vector should be a template class taking the dimension N of the
+vector (not the type) as a positive integer template parameter
+
+See the provided header file (Vector.h) to see which methods should be implemented in your Vector.cpp
+file.
+
+You should also create a 3-dimensional Vector class called Vector3 derived from the base class
+Vector<3> having an additional public member function cross which is to be used to calculate the
+cross product of two 3D vectors.
+
+The function will have the following prototype:
+Vector3 Vector3::cross(Vector3 v);
